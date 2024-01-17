@@ -6,12 +6,12 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Test_Package.login_test">
+      <class name="Test_Package.TC_001_login_test">
         <methods>
-          <include name="test_login" invocation-numbers="1"/>
-          <include name="browserTearDown"/>
+          <include name="teardown"/>
+          <include name="test_login" invocation-numbers="3"/>
         </methods>
-      </class> <!-- Test_Package.login_test -->
+      </class> <!-- Test_Package.TC_001_login_test -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

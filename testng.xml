@@ -6,7 +6,9 @@
 </listeners>
   <test thread-count="5" name="Test">
     <classes>
-      <class name="Test_Package.login_test"/>
+      <class name="Test_Package.TC_003_forgotpassword_test"/>
+      <class name="Test_Package.TC_001_login_test"/>
+      <class name="Test_Package.TC_002_registration_test"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

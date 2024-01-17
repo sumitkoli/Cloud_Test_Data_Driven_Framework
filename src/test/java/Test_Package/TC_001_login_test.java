@@ -3,7 +3,6 @@ package Test_Package;
 import java.util.HashMap;
 
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
 import org.testng.SkipException;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -12,6 +11,7 @@ import Base_Package.Base_Class;
 import pageobjects.HomePage;
 import pageobjects.LoginPage;
 import util.DataUtil;
+import util.HelperClass;
 import util.MyXLSReader;
 
 public class TC_001_login_test extends Base_Class {
@@ -29,30 +29,15 @@ public class TC_001_login_test extends Base_Class {
 
 		driver = openBrowser(hMap.get("Browser"));
 
-		
 		LoginPage loginPage = new LoginPage(driver);
-
 		loginPage.enterUserEmail(hMap.get("Username"));
-		
+
 		loginPage.enterUserPassword(hMap.get("Password"));
 
 		HomePage homePage = loginPage.clickonSignInButton();
 
-		String expectedResult = hMap.get("ExpectedResult");
-
-		boolean expectedConvertedResult = false;
-
-		if (expectedResult.equalsIgnoreCase("Success")) {
-			expectedConvertedResult = true;
-		} else if (expectedResult.equalsIgnoreCase("Failure")) {
-			expectedConvertedResult = false;
-		}
-
-		boolean actualResult = false;
-		actualResult = homePage.verifyWelcomeText();
-
-		Assert.assertEquals(actualResult, expectedConvertedResult);
-		log.info("Login Test Validation Passed");
+		HelperClass helperClass = new HelperClass();
+		helperClass.assertvalidation(hMap.get("ExpectedResult"), homePage.verifyWelcomeText());
 	}
 
 	@DataProvider
@@ -68,5 +53,6 @@ public class TC_001_login_test extends Base_Class {
 		}
 
 		return data;
+		
 	}
 }

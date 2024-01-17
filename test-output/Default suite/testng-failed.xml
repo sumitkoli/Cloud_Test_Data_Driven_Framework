@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Test_Package.TC_002_registration_test">
+      <class name="Test_Package.TC_003_forgotpassword_test">
         <methods>
           <include name="teardown"/>
-          <include name="registration_test" invocation-numbers="2 3 4 5 6 7 8 9 10"/>
+          <include name="test_forgotPassword"/>
+          <include name="openBrowser"/>
         </methods>
-      </class> <!-- Test_Package.TC_002_registration_test -->
+      </class> <!-- Test_Package.TC_003_forgotpassword_test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

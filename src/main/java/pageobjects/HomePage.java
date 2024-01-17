@@ -17,7 +17,7 @@ public class HomePage {
 	//-----------------------------------WebElement-----------------------------------------
 	
 		
-	//Welcome Verify Text
+	//WebElement Welcome Verify Text
 	@FindBy(xpath = "//h3[contains(text(),'Welcome')]")
 	private WebElement welcomeverifyText;
 

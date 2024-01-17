@@ -19,7 +19,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
-import org.testng.annotations.AfterTest;
+import org.testng.annotations.AfterMethod;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -75,9 +75,9 @@ public class Base_Class {
 		return driver;
 	}
 	
-	@AfterTest
+	@AfterMethod
 	public void teardown() {
-		System.out.println("After Test 3434343434");
+		
 		driver.quit();
 	}
 	
@@ -106,5 +106,7 @@ public class Base_Class {
 		return destPath;
 		
 	}
+	
+	
 
 }
