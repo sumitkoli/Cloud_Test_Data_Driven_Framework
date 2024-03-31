@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Test_Package.TC_003_forgotpassword_test">
+      <class name="Test_Package.SampleTest">
         <methods>
-          <include name="teardown"/>
-          <include name="test_forgotPassword"/>
-          <include name="openBrowser"/>
+          <include name="test1"/>
         </methods>
-      </class> <!-- Test_Package.TC_003_forgotpassword_test -->
+      </class> <!-- Test_Package.SampleTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -46,7 +46,7 @@ public class HelperClass {
 	public String generateEmailString() {
 
 		String emailGenerator = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
-		int emaillength = 10;
+		int emaillength =6;
 		String emailData = generateRandomChars(emailGenerator, emaillength) + "@gmail.com";
 
 		return emailData;

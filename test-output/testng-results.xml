@@ -1,257 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="16" passed="16" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-12T17:03:25 IST" name="Suite" finished-at="2024-01-12T17:06:26 IST" duration-ms="181067">
+  <suite started-at="2024-02-27T12:01:17 IST" name="Default suite" finished-at="2024-02-27T12:04:33 IST" duration-ms="196180">
     <groups>
     </groups>
-    <test started-at="2024-01-12T17:03:25 IST" name="Test" finished-at="2024-01-12T17:06:26 IST" duration-ms="181067">
-      <class name="Test_Package.TC_002_registration_test">
-        <test-method signature="registration_test(java.util.HashMap)[pri:0, instance:Test_Package.TC_002_registration_test@320e400]" started-at="2024-01-12T17:04:47 IST" name="registration_test" data-provider="datafor_Registration" finished-at="2024-01-12T17:04:52 IST" duration-ms="5111" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{MobileNo=2024a, Email=test, ExpectedResult=Success, FirstName=Sonu, Runmode=Y, UserPassword=12345678a, LastName=Mahi, Browser=Chrome}]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2024-02-27T12:01:17 IST" name="Default test" finished-at="2024-02-27T12:04:33 IST" duration-ms="196180">
+      <class name="Test_Package.SampleTest">
+        <test-method signature="test1()[pri:0, instance:Test_Package.SampleTest@37d4349f]" started-at="2024-02-27T12:01:17 IST" name="test1" finished-at="2024-02-27T12:04:33 IST" duration-ms="196058" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[java.util.concurrent.TimeoutException
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fb3fecfc502b3bcd6c3639b9301fda99, get {url=https://www.w3schools.com/java/java_files.asp}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.189, chrome: {chromedriverVersion: 121.0.6167.184 (057a8ae7deb..., userDataDir: C:\Users\lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61259}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61259/devtoo..., se:cdpVersion: 121.0.6167.189, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fb3fecfc502b3bcd6c3639b9301fda99]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fb3fecfc502b3bcd6c3639b9301fda99, get {url=https://www.w3schools.com/java/java_files.asp}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.189, chrome: {chromedriverVersion: 121.0.6167.184 (057a8ae7deb..., userDataDir: C:\Users\lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61259}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61259/devtoo..., se:cdpVersion: 121.0.6167.189, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fb3fecfc502b3bcd6c3639b9301fda99
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:65)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:48)
+at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:96)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:188)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+at Test_Package.SampleTest.test1(SampleTest.java:44)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.util.concurrent.TimeoutException
+at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1956)
+at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2091)
+at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:59)
+... 38 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- registration_test -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.TC_002_registration_test@320e400]" started-at="2024-01-12T17:04:52 IST" name="teardown" finished-at="2024-01-12T17:04:53 IST" duration-ms="252" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method signature="registration_test(java.util.HashMap)[pri:0, instance:Test_Package.TC_002_registration_test@320e400]" started-at="2024-01-12T17:04:53 IST" name="registration_test" data-provider="datafor_Registration" finished-at="2024-01-12T17:04:58 IST" duration-ms="5104" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{MobileNo=2024a, Email=test, ExpectedResult=Success, FirstName=Monu, Runmode=Y, UserPassword=12345678a, LastName=Mahi, Browser=Chrome}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registration_test -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.TC_002_registration_test@320e400]" started-at="2024-01-12T17:04:58 IST" name="teardown" finished-at="2024-01-12T17:04:58 IST" duration-ms="284" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method signature="registration_test(java.util.HashMap)[pri:0, instance:Test_Package.TC_002_registration_test@320e400]" started-at="2024-01-12T17:04:58 IST" name="registration_test" data-provider="datafor_Registration" finished-at="2024-01-12T17:05:12 IST" duration-ms="14183" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{MobileNo=20a, Email=test, ExpectedResult=Failure, FirstName=Nilesh, Runmode=Y, UserPassword=12345678a, LastName=Kumar, Browser=Chrome}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registration_test -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.TC_002_registration_test@320e400]" started-at="2024-01-12T17:05:12 IST" name="teardown" finished-at="2024-01-12T17:05:13 IST" duration-ms="376" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method signature="registration_test(java.util.HashMap)[pri:0, instance:Test_Package.TC_002_registration_test@320e400]" started-at="2024-01-12T17:05:13 IST" name="registration_test" data-provider="datafor_Registration" finished-at="2024-01-12T17:05:27 IST" duration-ms="14306" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{MobileNo=123456789323a, Email=test, ExpectedResult=Failure, FirstName=Rahul, Runmode=Y, UserPassword=12345678a, LastName=Sharma, Browser=Chrome}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registration_test -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.TC_002_registration_test@320e400]" started-at="2024-01-12T17:05:27 IST" name="teardown" finished-at="2024-01-12T17:05:27 IST" duration-ms="293" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method signature="registration_test(java.util.HashMap)[pri:0, instance:Test_Package.TC_002_registration_test@320e400]" started-at="2024-01-12T17:05:27 IST" name="registration_test" data-provider="datafor_Registration" finished-at="2024-01-12T17:05:41 IST" duration-ms="14271" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{MobileNo=2024a, Email=test, ExpectedResult=Failure, FirstName=Jack, Runmode=Y, UserPassword=12345a, LastName=Jones, Browser=Chrome}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registration_test -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.TC_002_registration_test@320e400]" started-at="2024-01-12T17:05:41 IST" name="teardown" finished-at="2024-01-12T17:05:42 IST" duration-ms="224" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method signature="registration_test(java.util.HashMap)[pri:0, instance:Test_Package.TC_002_registration_test@320e400]" started-at="2024-01-12T17:05:42 IST" name="registration_test" data-provider="datafor_Registration" finished-at="2024-01-12T17:05:56 IST" duration-ms="14594" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{MobileNo=2024a, Email=test, ExpectedResult=Failure, FirstName=, Runmode=Y, UserPassword=12345678a, LastName=Jones, Browser=Chrome}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registration_test -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.TC_002_registration_test@320e400]" started-at="2024-01-12T17:05:56 IST" name="teardown" finished-at="2024-01-12T17:05:57 IST" duration-ms="344" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method signature="registration_test(java.util.HashMap)[pri:0, instance:Test_Package.TC_002_registration_test@320e400]" started-at="2024-01-12T17:05:57 IST" name="registration_test" data-provider="datafor_Registration" finished-at="2024-01-12T17:06:11 IST" duration-ms="14540" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{MobileNo=2024a, Email=test, ExpectedResult=Failure, FirstName=Sack, Runmode=Y, UserPassword=12345678a, LastName=, Browser=Chrome}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registration_test -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.TC_002_registration_test@320e400]" started-at="2024-01-12T17:06:11 IST" name="teardown" finished-at="2024-01-12T17:06:12 IST" duration-ms="358" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method signature="registration_test(java.util.HashMap)[pri:0, instance:Test_Package.TC_002_registration_test@320e400]" started-at="2024-01-12T17:06:12 IST" name="registration_test" data-provider="datafor_Registration" finished-at="2024-01-12T17:06:26 IST" duration-ms="14079" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{MobileNo=2024a, Email=test, ExpectedResult=Failure, FirstName=Wack, Runmode=Y, UserPassword=, LastName=Jones, Browser=Chrome}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registration_test -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.TC_002_registration_test@320e400]" started-at="2024-01-12T17:06:26 IST" name="teardown" finished-at="2024-01-12T17:06:26 IST" duration-ms="286" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- Test_Package.TC_002_registration_test -->
-      <class name="Test_Package.TC_001_login_test">
-        <test-method signature="test_login(java.util.HashMap)[pri:0, instance:Test_Package.TC_001_login_test@7728643a]" started-at="2024-01-12T17:03:45 IST" name="test_login" data-provider="datafor_login" finished-at="2024-01-12T17:03:59 IST" duration-ms="13665" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Runmode=Y, ExpectedResult=Failure, Username=sumit@test.com, Browser=Chrome, Password=12345sdsd}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_login -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.TC_001_login_test@7728643a]" started-at="2024-01-12T17:03:59 IST" name="teardown" finished-at="2024-01-12T17:03:59 IST" duration-ms="304" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method signature="test_login(java.util.HashMap)[pri:0, instance:Test_Package.TC_001_login_test@7728643a]" started-at="2024-01-12T17:03:59 IST" name="test_login" data-provider="datafor_login" finished-at="2024-01-12T17:04:13 IST" duration-ms="13537" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Runmode=Y, ExpectedResult=Failure, Username=sack@apptest.com, Browser=Chrome, Password=sack@123}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_login -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.TC_001_login_test@7728643a]" started-at="2024-01-12T17:04:13 IST" name="teardown" finished-at="2024-01-12T17:04:13 IST" duration-ms="305" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method signature="test_login(java.util.HashMap)[pri:0, instance:Test_Package.TC_001_login_test@7728643a]" started-at="2024-01-12T17:04:13 IST" name="test_login" data-provider="datafor_login" finished-at="2024-01-12T17:04:19 IST" duration-ms="5296" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Runmode=Y, ExpectedResult=Success, Username=mack@apptest.com, Browser=Chrome, Password=mack@123}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_login -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.TC_001_login_test@7728643a]" started-at="2024-01-12T17:04:19 IST" name="teardown" finished-at="2024-01-12T17:04:19 IST" duration-ms="351" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method signature="test_login(java.util.HashMap)[pri:0, instance:Test_Package.TC_001_login_test@7728643a]" started-at="2024-01-12T17:04:19 IST" name="test_login" data-provider="datafor_login" finished-at="2024-01-12T17:04:33 IST" duration-ms="13910" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Runmode=Y, ExpectedResult=Failure, Username=wack@apptest.com, Browser=Chrome, Password=}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_login -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.TC_001_login_test@7728643a]" started-at="2024-01-12T17:04:33 IST" name="teardown" finished-at="2024-01-12T17:04:33 IST" duration-ms="311" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method signature="test_login(java.util.HashMap)[pri:0, instance:Test_Package.TC_001_login_test@7728643a]" started-at="2024-01-12T17:04:33 IST" name="test_login" data-provider="datafor_login" finished-at="2024-01-12T17:04:47 IST" duration-ms="13733" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Runmode=Y, ExpectedResult=Failure, Username=, Browser=Chrome, Password=mack@123}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_login -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.TC_001_login_test@7728643a]" started-at="2024-01-12T17:04:47 IST" name="teardown" finished-at="2024-01-12T17:04:47 IST" duration-ms="280" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- Test_Package.TC_001_login_test -->
-      <class name="Test_Package.TC_003_forgotpassword_test">
-        <test-method signature="test_forgotPassword(java.util.HashMap)[pri:0, instance:Test_Package.TC_003_forgotpassword_test@1edb61b1]" started-at="2024-01-12T17:03:26 IST" name="test_forgotPassword" data-provider="datafor_forgotPassword" finished-at="2024-01-12T17:03:33 IST" duration-ms="7693" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Runmode=Y, Email=sack@apptest.com, ExpectedResult=Success, Browser=Chrome}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_forgotPassword -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.TC_003_forgotpassword_test@1edb61b1]" started-at="2024-01-12T17:03:33 IST" name="teardown" finished-at="2024-01-12T17:03:34 IST" duration-ms="425" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method signature="test_forgotPassword(java.util.HashMap)[pri:0, instance:Test_Package.TC_003_forgotpassword_test@1edb61b1]" started-at="2024-01-12T17:03:34 IST" name="test_forgotPassword" data-provider="datafor_forgotPassword" finished-at="2024-01-12T17:03:39 IST" duration-ms="5509" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Runmode=Y, Email=sck@test.com, ExpectedResult=Failure, Browser=Chrome}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_forgotPassword -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.TC_003_forgotpassword_test@1edb61b1]" started-at="2024-01-12T17:03:39 IST" name="teardown" finished-at="2024-01-12T17:03:40 IST" duration-ms="330" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method signature="test_forgotPassword(java.util.HashMap)[pri:0, instance:Test_Package.TC_003_forgotpassword_test@1edb61b1]" started-at="2024-01-12T17:03:40 IST" name="test_forgotPassword" data-provider="datafor_forgotPassword" finished-at="2024-01-12T17:03:45 IST" duration-ms="5488" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Runmode=Y, Email=, ExpectedResult=Failure, Browser=Chrome}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_forgotPassword -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Package.TC_003_forgotpassword_test@1edb61b1]" started-at="2024-01-12T17:03:45 IST" name="teardown" finished-at="2024-01-12T17:03:45 IST" duration-ms="307" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- Test_Package.TC_003_forgotpassword_test -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- test1 -->
+      </class> <!-- Test_Package.SampleTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
